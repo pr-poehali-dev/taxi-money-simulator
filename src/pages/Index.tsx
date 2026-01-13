@@ -82,9 +82,9 @@ const Index = () => {
             
             <div className="flex justify-center items-center">
               <Button size="lg" className="text-lg px-10 py-7 neon-border hover:scale-105 transition-all animate-pulse-glow group" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <Icon name="ExternalLink" className="mr-2 group-hover:animate-float" size={24} />
-                  Перейти на официальный сайт
+                <a href="https://start.taxi-game.pro/?r=Mu3yku" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Rocket" className="mr-2 group-hover:animate-float" size={24} />
+                  Получить бонус и начать зарабатывать!
                 </a>
               </Button>
             </div>
@@ -190,9 +190,9 @@ const Index = () => {
                 Первый бонус ждет тебя при регистрации! Не упусти шанс построить свою империю такси.
               </p>
               <Button size="lg" className="text-xl px-12 py-8 neon-border hover:scale-110 transition-all animate-pulse-glow group" asChild>
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <Icon name="ExternalLink" className="mr-2 group-hover:animate-float" size={28} />
-                  Перейти на официальный сайт
+                <a href="https://start.taxi-game.pro/?r=Mu3yku" target="_blank" rel="noopener noreferrer">
+                  <Icon name="Gift" className="mr-2 group-hover:animate-float" size={28} />
+                  Забрать стартовый бонус прямо сейчас!
                 </a>
               </Button>
             </div>
