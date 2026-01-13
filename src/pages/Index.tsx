@@ -107,7 +107,7 @@ const Index = () => {
         <section className="py-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-4 neon-glow">
-              Почему <span className="text-secondary neon-cyan-glow">Taxi Money</span>?
+              Почему <span className="text-secondary neon-orange-glow">Taxi Money</span>?
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Устали от скучных кликеров? Станьте реальным таксопарком в игре!
@@ -158,7 +158,7 @@ const Index = () => {
         <section className="py-20">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-black mb-4 neon-glow">
-              🏆 Рейтинг <span className="text-secondary neon-cyan-glow">игроков</span>
+              🏆 Рейтинг <span className="text-secondary neon-orange-glow">игроков</span>
             </h2>
             <p className="text-lg text-muted-foreground">Лучшие предприниматели месяца</p>
           </div>
