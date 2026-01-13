@@ -6,39 +6,39 @@
 
 @layer base {
   :root {
-    --background: 40 20% 8%;
-    --foreground: 0 0% 100%;
+    --background: 40 25% 15%;
+    --foreground: 40 10% 95%;
 
-    --card: 40 15% 12%;
-    --card-foreground: 0 0% 100%;
+    --card: 40 20% 20%;
+    --card-foreground: 40 10% 95%;
 
-    --popover: 40 15% 12%;
-    --popover-foreground: 0 0% 100%;
+    --popover: 40 20% 20%;
+    --popover-foreground: 40 10% 95%;
 
-    --primary: 45 100% 55%;
-    --primary-foreground: 40 20% 8%;
+    --primary: 45 90% 55%;
+    --primary-foreground: 40 25% 15%;
 
-    --secondary: 30 100% 50%;
-    --secondary-foreground: 40 20% 8%;
+    --secondary: 30 85% 50%;
+    --secondary-foreground: 40 25% 15%;
 
-    --muted: 40 15% 20%;
-    --muted-foreground: 45 30% 70%;
+    --muted: 40 15% 30%;
+    --muted-foreground: 40 10% 65%;
 
-    --accent: 45 100% 55%;
-    --accent-foreground: 40 20% 8%;
+    --accent: 45 90% 55%;
+    --accent-foreground: 40 25% 15%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 45 30% 25%;
-    --input: 45 30% 25%;
-    --ring: 45 100% 55%;
+    --border: 40 20% 30%;
+    --input: 40 20% 30%;
+    --ring: 45 90% 55%;
 
     --radius: 0.75rem;
 
-    --neon-yellow: 45 100% 55%;
-    --neon-orange: 30 100% 50%;
-    --neon-amber: 38 100% 60%;
+    --neon-yellow: 45 90% 55%;
+    --neon-orange: 30 85% 50%;
+    --neon-amber: 38 90% 60%;
   }
 }
 
@@ -65,23 +65,20 @@
 @layer utilities {
   .neon-glow {
     text-shadow:
-      0 0 10px hsl(var(--neon-yellow)),
-      0 0 20px hsl(var(--neon-yellow)),
-      0 0 30px hsl(var(--neon-yellow));
+      0 0 5px hsl(var(--neon-yellow) / 0.5),
+      0 0 10px hsl(var(--neon-yellow) / 0.3);
   }
 
   .neon-border {
     box-shadow:
-      0 0 10px hsl(var(--neon-yellow)),
-      0 0 20px hsl(var(--neon-yellow)),
-      inset 0 0 10px hsl(var(--neon-yellow));
+      0 0 5px hsl(var(--neon-yellow) / 0.4),
+      0 0 10px hsl(var(--neon-yellow) / 0.2);
   }
 
   .neon-orange-glow {
     text-shadow:
-      0 0 10px hsl(var(--neon-orange)),
-      0 0 20px hsl(var(--neon-orange)),
-      0 0 30px hsl(var(--neon-orange));
+      0 0 5px hsl(var(--neon-orange) / 0.5),
+      0 0 10px hsl(var(--neon-orange) / 0.3);
   }
 
   .vibrate {

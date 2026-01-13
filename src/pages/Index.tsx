@@ -27,18 +27,18 @@ const Index = () => {
   ];
 
   const topPlayers = [
-    { rank: 1, name: "Александр М.", earnings: "₽127,450", icon: "Trophy" },
-    { rank: 2, name: "Елена К.", earnings: "₽98,320", icon: "Medal" },
-    { rank: 3, name: "Дмитрий В.", earnings: "₽85,670", icon: "Award" },
-    { rank: 4, name: "Ольга С.", earnings: "₽72,190", icon: "Star" },
-    { rank: 5, name: "Игорь П.", earnings: "₽64,580", icon: "Sparkles" }
+    { rank: 1, name: "TaxiKing777", earnings: "₽127,450", icon: "Trophy" },
+    { rank: 2, name: "SpeedDriver", earnings: "₽98,320", icon: "Medal" },
+    { rank: 3, name: "MoneyRush", earnings: "₽85,670", icon: "Award" },
+    { rank: 4, name: "ProCabbie", earnings: "₽72,190", icon: "Star" },
+    { rank: 5, name: "GoldWheel", earnings: "₽64,580", icon: "Sparkles" }
   ];
 
   const withdrawMethods = [
-    { name: "Bitcoin", icon: "Bitcoin", fee: "0.5%" },
+    { name: "Карты РФ", icon: "CreditCard", fee: "0%" },
     { name: "USDT (TRC-20)", icon: "Coins", fee: "1%" },
     { name: "ЮMoney", icon: "Wallet", fee: "2%" },
-    { name: "Qiwi", icon: "CreditCard", fee: "2.5%" }
+    { name: "Qiwi", icon: "BadgeRussianRuble", fee: "2.5%" }
   ];
 
   const gameProcess = [
