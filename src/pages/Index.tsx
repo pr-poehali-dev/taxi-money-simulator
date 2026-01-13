@@ -26,13 +26,7 @@ const Index = () => {
     }
   ];
 
-  const topPlayers = [
-    { rank: 1, name: "TaxiKing777", earnings: "₽127,450", icon: "Trophy" },
-    { rank: 2, name: "SpeedDriver", earnings: "₽98,320", icon: "Medal" },
-    { rank: 3, name: "MoneyRush", earnings: "₽85,670", icon: "Award" },
-    { rank: 4, name: "ProCabbie", earnings: "₽72,190", icon: "Star" },
-    { rank: 5, name: "GoldWheel", earnings: "₽64,580", icon: "Sparkles" }
-  ];
+
 
   const withdrawMethods = [
     { name: "Карты РФ", icon: "CreditCard", fee: "0%" },
@@ -86,14 +80,12 @@ const Index = () => {
               <span className="font-bold text-foreground">Taxi Money:</span> Твой собственный автопарк с реальным доходом
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button size="lg" className="text-lg px-8 py-6 neon-border hover:scale-105 transition-all animate-pulse-glow group">
-                <Icon name="Rocket" className="mr-2 group-hover:animate-float" size={24} />
-                Начать зарабатывать
-              </Button>
-              <Button size="lg" variant="outline" className="text-lg px-8 py-6 border-2 border-secondary/50 hover:border-secondary hover:bg-secondary/10 transition-all">
-                <Icon name="Play" className="mr-2" size={24} />
-                Смотреть демо
+            <div className="flex justify-center items-center">
+              <Button size="lg" className="text-lg px-10 py-7 neon-border hover:scale-105 transition-all animate-pulse-glow group" asChild>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Icon name="ExternalLink" className="mr-2 group-hover:animate-float" size={24} />
+                  Перейти на официальный сайт
+                </a>
               </Button>
             </div>
 
@@ -154,43 +146,7 @@ const Index = () => {
           </div>
         </section>
 
-        {/* Top Players */}
-        <section className="py-20">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-black mb-4 neon-glow">
-              🏆 Рейтинг <span className="text-secondary neon-orange-glow">игроков</span>
-            </h2>
-            <p className="text-lg text-muted-foreground">Лучшие предприниматели месяца</p>
-          </div>
 
-          <div className="max-w-2xl mx-auto space-y-4">
-            {topPlayers.map((player, index) => (
-              <Card 
-                key={index}
-                className="p-4 bg-card/50 backdrop-blur-sm border-primary/20 hover:border-primary/60 transition-all hover:scale-102 cursor-pointer group animate-slide-up"
-                style={{ animationDelay: `${index * 0.1}s` }}
-              >
-                <div className="flex items-center gap-4">
-                  <div className={`w-12 h-12 rounded-full flex items-center justify-center font-black text-lg ${
-                    index === 0 ? 'bg-gradient-to-br from-yellow-400 to-yellow-600 neon-border' :
-                    index === 1 ? 'bg-gradient-to-br from-gray-300 to-gray-500' :
-                    index === 2 ? 'bg-gradient-to-br from-orange-400 to-orange-600' :
-                    'bg-primary/20'
-                  }`}>
-                    {player.rank}
-                  </div>
-                  <div className="flex-1">
-                    <div className="font-bold text-lg">{player.name}</div>
-                    <div className="text-sm text-muted-foreground">Заработал за месяц</div>
-                  </div>
-                  <div className="text-right">
-                    <div className="text-2xl font-black text-primary group-hover:animate-pulse-glow">{player.earnings}</div>
-                  </div>
-                </div>
-              </Card>
-            ))}
-          </div>
-        </section>
 
         {/* Withdrawal Methods */}
         <section className="py-20">
@@ -219,12 +175,7 @@ const Index = () => {
             ))}
           </div>
 
-          <div className="text-center mt-12">
-            <Button size="lg" className="text-lg px-8 py-6 bg-secondary hover:bg-secondary/80 neon-border animate-pulse-glow">
-              <Icon name="DollarSign" className="mr-2" size={24} />
-              Вывести средства
-            </Button>
-          </div>
+
         </section>
 
         {/* CTA Section */}
@@ -238,9 +189,11 @@ const Index = () => {
               <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
                 Первый бонус ждет тебя при регистрации! Не упусти шанс построить свою империю такси.
               </p>
-              <Button size="lg" className="text-xl px-12 py-8 neon-border hover:scale-110 transition-all animate-pulse-glow group">
-                <Icon name="Rocket" className="mr-2 group-hover:animate-float" size={28} />
-                Получить бонус и начать
+              <Button size="lg" className="text-xl px-12 py-8 neon-border hover:scale-110 transition-all animate-pulse-glow group" asChild>
+                <a href="#" target="_blank" rel="noopener noreferrer">
+                  <Icon name="ExternalLink" className="mr-2 group-hover:animate-float" size={28} />
+                  Перейти на официальный сайт
+                </a>
               </Button>
             </div>
           </Card>
